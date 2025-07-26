@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemplateForge - Crafting Your Perfect Blueprint</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-eUIVBEV4povaNg3rSuwGUlw6.png?st=2025-07-26T14%3A20%3A30Z&se=2025-07-26T16%3A20%3A30Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-25T15%3A51%3A45Z&ske=2025-07-26T15%3A51%3A45Z&sks=b&skv=2024-08-04&sig=SQsvNIhuclS3MA3Hs5E0o6O6mb1KY9XhunR30ikvJPs%3D">
+    <style>
+        body {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-eUIVBEV4povaNg3rSuwGUlw6.png?st=2025-07-26T14%3A20%3A30Z&se=2025-07-26T16%3A20%3A30Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-25T15%3A51%3A45Z&ske=2025-07-26T15%3A51%3A45Z&sks=b&skv=2024-08-04&sig=SQsvNIhuclS3MA3Hs5E0o6O6mb1KY9XhunR30ikvJPs%3D" alt="TemplateForge Logo" class="h-12">
+            <h1 class="text-xl font-bold">TemplateForge</h1>
+            <span class="text-sm">Crafting Your Perfect Blueprint</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <section class="bg-white shadow-md rounded p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Create Your Resume Template</h2>
+            <form id="resumeForm" class="space-y-4">
+                <div>
+                    <label for="industry" class="block text-sm font-medium text-gray-700">Industry</label>
+                    <select id="industry" name="industry" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                        <option value="technology">Technology</option>
+                        <option value="finance">Finance</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="education">Education</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="experience" class="block text-sm font-medium text-gray-700">Experience Level</label>
+                    <select id="experience" name="experience" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                        <option value="entry">Entry Level</option>
+                        <option value="mid">Mid Level</option>
+                        <option value="senior">Senior Level</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="style" class="block text-sm font-medium text-gray-700">Personal Style</label>
+                    <select id="style" name="style" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                        <option value="modern">Modern</option>
+                        <option value="traditional">Traditional</option>
+                        <option value="creative">Creative</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Generate Template</button>
+            </form>
+        </section>
+
+        <section id="templateSection" class="mt-8 hidden">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Your Tailored Resume Template</h2>
+            <div id="templateContent" class="bg-gray-100 p-4 rounded">
+                <!-- Template content will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            &copy; 2023 TemplateForge. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
